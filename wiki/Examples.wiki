@@ -1,4 +1,5 @@
 #summary lgrep Examples
+#labels Featured
 
 The idea behind lgrep is to have a grep-like tool for parsing Directory Server access logs.  This should, in principle, give us the capability to solve complex log parsing problems using relatively simple pipelines.  
 
