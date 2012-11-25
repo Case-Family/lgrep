@@ -1,6 +1,6 @@
 #summary Overview of the lgrep Script
 
-Usage:
+{{{Usage:
 
 lgrep [-O <Output Type>] [-S [DD/Mmm/yyyy:]hh:mm:ss] [-E [DD/Mmm/yyyy:]hh:mm:ss] [-vidh] expression [file]
     -O Output type - one of connection, operation, sort, stat, or echo - defaults to operation
@@ -79,3 +79,4 @@ lgrep -O echo -S 15/Nov/2008:19:00:00 -E 15/Nov/2008:19:59:59 access.foo
 6) Examine workload statistics in one-hour increments
  
 lgrep -O stat -I 3600 access.foo
+}}}
