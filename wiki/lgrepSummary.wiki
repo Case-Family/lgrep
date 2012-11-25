@@ -1,0 +1,15 @@
+#summary lgrep - A grep-like DSEE Access Log Parser
+=== The Whizbang Directory Server Access Log Parser ===
+
+We often have to use multiple pipelines to do things like:
+
+  * Find and print all operation entries (including the request line) that have a certain characteristic, such as a result code or etime. 
+  * Find and print all connections that have certain characteristics, such as a specific source IP or BIND DN.
+
+Using pipelines of grep, awk, and xargs for this works functionally, but can result in many passes through the access log. When the access log is large, this can take a very long time. This script attempts to perform such operations with only one pass through the log.
+
+The caveat is that the script must store the contents of an operation or connection in a data structure until the script determines whether to print the contents or not. So, in a worst case scenario, if connection output has been requested, and the script is unable to determine whether or not to print any of the connections in the log until the very end, the perl process may have the entire log stored in memory.
+
+=== Download ===
+
+[http://code.google.com/p/lgrep/downloads/list]
