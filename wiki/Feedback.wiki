@@ -1,6 +1,0 @@
-#summary Please provide feedback here.
-#labels Featured
-
-If you are having any difficulty using the script, are experiencing a bug, or would like to see a particular feature, add comments to this wiki page. 
-
-Thanks! 
